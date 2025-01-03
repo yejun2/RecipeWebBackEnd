@@ -18,10 +18,10 @@ async function fetchData(name) {
     console.log(URI);
     // JSONPlaceholder API를 사용하여 가짜 사용자 목록 가져오기
     const response = await axios.get(URI);
-
+    const result = response.data['items'][0]['pagemap']['cse_thumbnail'];
     // 응답 데이터 출력
-    console.log(response);
-    return response.data;
+    console.log(result);
+    return result;
   } catch (error) {
     console.error('데이터를 가져오는 중 에러 발생:', error);
     return null;
