@@ -4,7 +4,9 @@
   "description": "예준팀 냉장고를 부탁해 웹어플리케이션 백엔드 레포지토리.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",      
+    "dev": "nodemon index.js"       
   },
   "repository": {
     "type": "git",
