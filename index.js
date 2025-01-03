@@ -1,7 +1,9 @@
 // index.js
 
 const express = require('express');
+const cors = require('cors');
 const app = express();
+app.use(cors());
 const port = 4000;
 
 // 기본 라우트 설정
@@ -18,6 +20,8 @@ app.get('/api/users', (req, res) => {
   ];
   res.json(users);
 });
+
+
 
 // 서버 시작
 app.listen(port, () => {
